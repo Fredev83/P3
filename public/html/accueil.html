@@ -9,14 +9,88 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        
-        <div>
-       
-        </div>
+        <header class="header1">
+            <div class="logo">
+                <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/logo/ohmyfood.png" alt="logo_ohmyfood">
+            </div>
+        </header>
+
+        <main class="main0">
+            <section class="search">
+                <div class="icone-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="town">
+                    <input type="search" id="search" value="Paris, Belleville">
+                </div>
+            </section>
+
+            <section class="intro">
+                <h1>Reservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <a href="#restaurants"><button>explorer nos restaurants</button></a>
+            </section>
+
+            <section class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <ol id="etapes">
+                    <li class="etape1">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p>choisissez un restaurant</p>                              
+                    </li>
+                    <li class="etape2">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>composez votre menu</p> 
+                    </li>
+                    <li class="etape3">
+                        <i class="fa-sharp fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>  
+                    </li>
+                </ol>
+            </section>
+
+            <section id="restaurants">
+                <h2>Restaurants</h2>
+                <a href="resto1">
+                    <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/restaurants/la_palette_du_gout.jpg" alt="la_palette_du_gout">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="resto2">
+                    <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/restaurants/la_note_enchantee.jpg" alt="la_note_enchantee">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="resto3">
+                    <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="resto4">
+                    <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                    <i class="fa-regular fa-heart"></i>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <img src="file:///Users/fredericrouxel/Documents/ohmyfood/public/images/logo/ohmyfood.png" alt="logo_ohmyfood">
+            <ul class="cgv">
+                <li class="proposer">Proposer un restaurant</li>
+                <li class="partenaire">Devenir partenaire</li>
+                <li class="mentions">Mentions légales</li>
+                <li class="contact">Contact</li>
+            </ul>
+        </footer>
+
      </body>
   </html>
