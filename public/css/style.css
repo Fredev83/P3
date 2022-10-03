@@ -10,8 +10,8 @@
   font-family: "Shrikhand", sans-serif;
 }
 
-.header1 {
-  border: 2px solid red;
+.header__logo {
+  background-color: rgb(102, 76, 76);
 }
 
 /*# sourceMappingURL=style.css.map */
