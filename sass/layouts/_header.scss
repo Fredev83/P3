@@ -1,3 +1,17 @@
-.header__logo {
-  background-color: rgb(102, 76, 76)
+
+.header1 {
+  position: relative;
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-bottom: 3%;
+    padding-top: 5%;
+    box-shadow: 0px 2px 3px #cacaca;
+      img {
+        width: 44%
+      }
+    
+  }
 }
