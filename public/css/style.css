@@ -56,7 +56,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(242, 242, 242);
   text-align: center;
   height: auto;
 }
@@ -73,8 +73,9 @@
 }
 
 .fonctionnement {
-  margin-top: 45px;
+  margin-top: 50px;
   margin-left: 25px;
+  margin-bottom: 40px;
 }
 .fonctionnement h2 {
   margin-left: -7px;
@@ -125,6 +126,66 @@
 
 .text {
   font-weight: 500;
+}
+
+#restaurants {
+  background: rgb(242, 242, 242);
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+#restaurants h2 {
+  margin-left: 20px;
+}
+
+.resto__card {
+  height: 250px;
+  width: 335px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px #dedbdb;
+}
+.resto__card a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.image-resto {
+  height: 68%;
+  width: 100%;
+}
+.image-resto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+  width: 100%;
+}
+.card-body .card-title {
+  margin-left: 14px;
+}
+.card-body p {
+  margin-top: -15px;
+  font-size: 17px;
+}
+
+.card-heart {
+  width: 50px;
+  position: relative;
+  top: 20px;
+  font-size: 25px;
+}
+.card-heart ::before {
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=style.css.map */
