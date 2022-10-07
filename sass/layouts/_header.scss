@@ -1,16 +1,23 @@
 
 .header1 {
   position: relative;
+  box-shadow: 0px 2px 3px #cacaca;
   .header__logo {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: auto;
     padding-bottom: 3%;
     padding-top: 5%;
-    box-shadow: 0px 2px 3px #cacaca;
+    @include media-min("desktop") {
+      justify-content: flex-start;
+    }
+  
       img {
-        width: 44%
+        width: 44%;   
+      }
+      @include media-min("desktop") {
+        width: 50%;
+        margin-left: 50px;
       }
     
   }
