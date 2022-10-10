@@ -21,12 +21,19 @@
     margin-top: 50px;
     margin-left: 25px;
     margin-bottom: 40px;
-    h2 {
+    h2{
         margin-left: -7px;
+        @include  media-min("tablet") {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
     }
     .fonctionnement__etapes {
-        display: flex;
-        flex-direction: column;
+        @include  media-min("tablet") {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }
 
@@ -39,20 +46,21 @@
     margin-bottom: 25px;
     align-items: center;
     box-shadow: 0px 5px 10px #e8e4e4;
+    &:hover{
+        background: #F4ECFD; 
+        i{
+            color: $color-primary;
+        }
+    }
+    @include  media-min("tablet") {
+        justify-content: center;
+        width: 30%;
+    }
     i {
-        margin-left: 10px;
         margin-left: 10px;
         margin-right: 24px;
         font-size: 18px;
         color: grey;
-    }
-    
-}
-
-.etape--purple {
-    background: #F4ECFD;
-    i {
-        color: $color-primary;
     }
 }
 
@@ -68,6 +76,11 @@
     border-radius: 59%;
     margin-bottom: 3px;
     padding-top: 7px;
+    @include  media-min("desktop") {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 15px;
+    }
 }
 
 .text {
@@ -78,8 +91,29 @@
     background: $color-background;
     padding-top: 35px;
     padding-bottom: 50px;
-    h2 {
-        margin-left: 20px;
+    .title{
+        text-align: center;
+        margin-left: -200px;
+        @include  media-min("tablet") {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 35px;
+            margin-left: 0px;
+        }
+    }
+}
+.resto__cards {
+    display: flex;
+    flex-direction: column;
+    @include  media-min("tablet") {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }
+        @include  media-min("desktop") {
+            width: 996px;
     }
 }
 
@@ -91,6 +125,16 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 2px 10px #dedbdb;
+    @include  media-min("tablet") {
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    @include  media-min("desktop") {
+        height: 340px;
+        width: 460px;
+
+    }
     a {
         height: 100%;
         width: 100%;
@@ -134,6 +178,9 @@
     width: 100%;
     .card-title {
         margin-left: 14px;
+        @include  media-min("desktop") {
+            margin-top: 10px; 
+        }
     }
     p {
         margin-top: -15px;
@@ -148,10 +195,12 @@
     position: relative;
     top: 20px;
     font-size: 25px;
+    @include  media-min("desktop") {
+        margin-top: 10px; 
+    }
     ::before {
         font-weight: 200;
     }
-
 }
 
 

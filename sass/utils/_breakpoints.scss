@@ -1,6 +1,6 @@
 $breakpoints: (
-    "tablet": 768px,
-    "desktop": 996px,
+    "tablet" : 768px,
+    "desktop" : 996px,
 );
 
 @mixin media-min($tablet) {
@@ -14,4 +14,7 @@ $breakpoints: (
         &{ @content; }
     }
 }
+
+
+
 

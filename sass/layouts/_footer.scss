@@ -13,6 +13,12 @@
     left: 25px;
     top: 25px;
     margin-bottom: 27px;
+    @include media-min("tablet") {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        left: 0px;
+    }
     h2 {
         color: white;
         font-family: 'Shrikhand', sans-serif;
@@ -21,9 +27,21 @@
 
 .footer__links {
     margin-left: 25px;
+    @include media-min("tablet") {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 10px;
+        font-size: 18px;
+        margin-left: 0px;
+    }
     a {
         text-decoration: none;
         color: white;
+        @include media-min("tablet") { 
+        margin-left: 20px;
+        margin-right: 20px;
+        }
     }
 }
 
@@ -32,7 +50,7 @@
     align-items: flex-start;
     margin-bottom: -24px;
     i {
-        width: 10%;
+        width: 35px;
         position: relative;
         top: 20px;
         font-size: 13px;
@@ -44,6 +62,5 @@
 
 .mentions {
     margin-bottom: -5px;
-
 }
 

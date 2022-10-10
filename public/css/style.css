@@ -20,31 +20,31 @@
   border: none;
   color: white;
   box-shadow: 0px 5px 10px #bdbbbb;
+  position: relative;
+  transition: all 300ms;
+}
+.button1:hover {
+  transform: scale(1.15);
 }
 
-.header1 {
+.header1, .header2 {
   position: relative;
   box-shadow: 0px 2px 3px #cacaca;
 }
-.header1 .header__logo {
+.header1 .header__logo, .header2 .header__logo {
   display: flex;
   justify-content: center;
   width: auto;
   padding-bottom: 3%;
   padding-top: 5%;
 }
-@media screen and (min-width: 996px) {
-  .header1 .header__logo {
-    justify-content: flex-start;
-  }
-}
-.header1 .header__logo img {
+.header1 .header__logo img, .header2 .header__logo img {
   width: 44%;
 }
 @media screen and (min-width: 996px) {
-  .header1 .header__logo {
-    width: 50%;
-    margin-left: 50px;
+  .header1 .header__logo, .header2 .header__logo {
+    width: 70%;
+    margin: auto;
   }
 }
 
@@ -64,6 +64,14 @@
   top: 25px;
   margin-bottom: 27px;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+  }
+}
 .footer__logo h2 {
   color: white;
   font-family: "Shrikhand", sans-serif;
@@ -72,9 +80,25 @@
 .footer__links {
   margin-left: 25px;
 }
+@media screen and (min-width: 768px) {
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    margin-left: 0px;
+  }
+}
 .footer__links a {
   text-decoration: none;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  .footer__links a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .link1 {
@@ -83,7 +107,7 @@
   margin-bottom: -24px;
 }
 .link1 i {
-  width: 10%;
+  width: 35px;
   position: relative;
   top: 20px;
   font-size: 13px;
@@ -104,6 +128,11 @@
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: rgb(236, 236, 236);
+}
+@media screen and (min-width: 996px) {
+  .search {
+    padding-left: 0px;
+  }
 }
 .search input {
   position: relative;
@@ -139,9 +168,18 @@
 .fonctionnement h2 {
   margin-left: -7px;
 }
-.fonctionnement .fonctionnement__etapes {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .fonctionnement h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement__etapes {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .etape {
@@ -154,19 +192,23 @@
   align-items: center;
   box-shadow: 0px 5px 10px #e8e4e4;
 }
+.etape:hover {
+  background: #F4ECFD;
+}
+.etape:hover i {
+  color: #9356DC;
+}
+@media screen and (min-width: 768px) {
+  .etape {
+    justify-content: center;
+    width: 30%;
+  }
+}
 .etape i {
-  margin-left: 10px;
   margin-left: 10px;
   margin-right: 24px;
   font-size: 18px;
   color: grey;
-}
-
-.etape--purple {
-  background: #F4ECFD;
-}
-.etape--purple i {
-  color: #9356DC;
 }
 
 .nbr {
@@ -182,6 +224,13 @@
   margin-bottom: 3px;
   padding-top: 7px;
 }
+@media screen and (min-width: 996px) {
+  .nbr {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+  }
+}
 
 .text {
   font-weight: 500;
@@ -192,8 +241,36 @@
   padding-top: 35px;
   padding-bottom: 50px;
 }
-#restaurants h2 {
-  margin-left: 20px;
+#restaurants .title {
+  text-align: center;
+  margin-left: -200px;
+}
+@media screen and (min-width: 768px) {
+  #restaurants .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    margin-left: 0px;
+  }
+}
+
+.resto__cards {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .resto__cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 996px) {
+  .resto__cards {
+    width: 996px;
+  }
 }
 
 .resto__card {
@@ -204,6 +281,19 @@
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 10px #dedbdb;
+}
+@media screen and (min-width: 768px) {
+  .resto__card {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 996px) {
+  .resto__card {
+    height: 340px;
+    width: 460px;
+  }
 }
 .resto__card a {
   height: 100%;
@@ -248,6 +338,11 @@
 .card-body .card-title {
   margin-left: 14px;
 }
+@media screen and (min-width: 996px) {
+  .card-body .card-title {
+    margin-top: 10px;
+  }
+}
 .card-body p {
   margin-top: -15px;
   font-size: 17px;
@@ -259,6 +354,11 @@
   position: relative;
   top: 20px;
   font-size: 25px;
+}
+@media screen and (min-width: 996px) {
+  .card-heart {
+    margin-top: 10px;
+  }
 }
 .card-heart ::before {
   font-weight: 200;

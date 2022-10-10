@@ -6,6 +6,9 @@
     padding-top: 4%;
     padding-bottom: 4%;
     background-color: rgb(236 236 236);
+    @include media-min("desktop") {
+        padding-left: 0px;
+      }
         input{
             position: relative;
             left: 15px;
