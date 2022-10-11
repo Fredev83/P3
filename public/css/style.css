@@ -6,8 +6,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-.title {
+h1 {
   font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
 }
 
 .button1 {
@@ -27,14 +28,27 @@
   transform: scale(1.15);
 }
 
+.header2__home-button {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  justify-content: flex-end;
+}
+.header2__home-button button {
+  border: none;
+  background: white;
+  font-size: 20px;
+}
+
 .header1, .header2 {
+  display: flex;
   position: relative;
   box-shadow: 0px 2px 3px #cacaca;
 }
 .header1 .header__logo, .header2 .header__logo {
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 100%;
   padding-bottom: 3%;
   padding-top: 5%;
 }
@@ -46,6 +60,16 @@
     width: 70%;
     margin: auto;
   }
+}
+
+.header2 {
+  box-shadow: none;
+  padding-top: 1%;
+}
+.header2 .header__logo img {
+  width: 50%;
+  position: relative;
+  right: 30px;
 }
 
 .footer {
@@ -148,7 +172,7 @@
   text-align: center;
   height: auto;
 }
-.intro h1 {
+.intro h2 {
   font-size: 24px;
   margin-bottom: -4px;
   padding-left: 12%;
@@ -362,6 +386,25 @@
 }
 .card-heart ::before {
   font-weight: 200;
+}
+
+main {
+  background: #f2f2f2;
+}
+
+.menu-heading {
+  width: 100%;
+  height: auto;
+}
+.menu-heading img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-heading__title {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
