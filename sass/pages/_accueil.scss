@@ -3,13 +3,13 @@
     flex-direction: column;
     background-color: $color-background;
     text-align: center;
-    height: auto;
+    height: 265px;
     h2{
         font-size: 24px;
-        margin-bottom: -4px;
+        margin-bottom: -6px;
         padding-left: 12%;
         padding-right: 12%;
-         padding-top: 6%;
+        padding-top: 5%;
     }
     p {
         font-size: 19px;
@@ -18,22 +18,28 @@
 }
 
 .fonctionnement {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-bottom: 40px;
+    background: white;
+    height: 440px;
+    @include  media-min("tablet") {
+        height: 300px;
+    } 
     h2{
-        margin-left: -7px;
+        margin-left: 25px;
+        padding-top: 50px;
+        margin-bottom: 25px;
         @include  media-min("tablet") {
             text-align: center;
             margin-bottom: 50px;
             font-size: 35px;
         }
     }
-    .fonctionnement__etapes {
-        @include  media-min("tablet") {
-            display: flex;
-            justify-content: space-around;
-        }
+}
+
+.fonctionnement__etapes {
+    margin-left: 30px;
+    @include  media-min("tablet") {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -112,8 +118,8 @@
         margin: auto;
         justify-content: center;
     }
-        @include  media-min("desktop") {
-            width: 996px;
+    @include  media-min("desktop") {
+        width: 996px;
     }
 }
 
