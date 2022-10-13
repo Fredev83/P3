@@ -4,13 +4,6 @@
     background-color: $color-background;
     text-align: center;
     height: 265px;
-    h2{
-        font-size: 24px;
-        margin-bottom: -6px;
-        padding-left: 12%;
-        padding-right: 12%;
-        padding-top: 5%;
-    }
     p {
         font-size: 19px;
         font-weight: 300;
@@ -23,16 +16,6 @@
     @include  media-min("tablet") {
         height: 300px;
     } 
-    h2{
-        margin-left: 25px;
-        padding-top: 50px;
-        margin-bottom: 25px;
-        @include  media-min("tablet") {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 35px;
-        }
-    }
 }
 
 .fonctionnement__etapes {
@@ -95,8 +78,8 @@
 
 #restaurants {
     background: $color-background;
-    padding-top: 35px;
     padding-bottom: 50px;
+    margin-top: -50px;
     .title{
         text-align: center;
         margin-left: -200px;
@@ -180,10 +163,12 @@
 .card-body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 30%;
     width: 100%;
     .card-title {
         margin-left: 14px;
+        margin-bottom: 5px;
         @include  media-min("desktop") {
             margin-top: 10px; 
         }
@@ -198,9 +183,7 @@
 
 .card-heart {
     width: 50px;
-    position: relative;
-    top: 20px;
-    font-size: 25px;
+    font-size: 30px;
     @include  media-min("desktop") {
         margin-top: 10px; 
     }

@@ -11,14 +11,40 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 18px;
   margin-bottom: -10px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 24px;
+  margin-bottom: -6px;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 5%;
+}
+
+h6 {
+  font-size: 24px;
+  margin-left: 20px;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  h6 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
 }
 
 .menu-txt p {
@@ -196,13 +222,6 @@ h3 {
   text-align: center;
   height: 265px;
 }
-.intro h2 {
-  font-size: 24px;
-  margin-bottom: -6px;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 5%;
-}
 .intro p {
   font-size: 19px;
   font-weight: 300;
@@ -215,18 +234,6 @@ h3 {
 @media screen and (min-width: 768px) {
   .fonctionnement {
     height: 300px;
-  }
-}
-.fonctionnement h2 {
-  margin-left: 25px;
-  padding-top: 50px;
-  margin-bottom: 25px;
-}
-@media screen and (min-width: 768px) {
-  .fonctionnement h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 35px;
   }
 }
 
@@ -296,8 +303,8 @@ h3 {
 
 #restaurants {
   background: rgb(242, 242, 242);
-  padding-top: 35px;
   padding-bottom: 50px;
+  margin-top: -50px;
 }
 #restaurants .title {
   text-align: center;
@@ -390,11 +397,13 @@ h3 {
 .card-body {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 30%;
   width: 100%;
 }
 .card-body .card-title {
   margin-left: 14px;
+  margin-bottom: 5px;
 }
 @media screen and (min-width: 996px) {
   .card-body .card-title {
@@ -409,9 +418,7 @@ h3 {
 
 .card-heart {
   width: 50px;
-  position: relative;
-  top: 20px;
-  font-size: 25px;
+  font-size: 30px;
 }
 @media screen and (min-width: 996px) {
   .card-heart {
@@ -440,7 +447,7 @@ main {
   justify-content: space-between;
   border-radius: 40px 40px 0px 0px;
   position: relative;
-  margin-top: -40px;
+  margin-top: -45px;
   background: #f2f2f2;
 }
 .menu-heading__title h1 {
@@ -454,7 +461,7 @@ main {
   display: flex;
   align-items: center;
   margin-right: 35px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .heading-heart i {
   font-size: 25px;
