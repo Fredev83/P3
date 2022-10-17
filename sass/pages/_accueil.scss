@@ -3,9 +3,12 @@
     flex-direction: column;
     background-color: $color-background;
     text-align: center;
-    height: 265px;
+    height: 230px;
+    @include  media-min("tablet") {
+        height: 150px;
+    } 
     p {
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 300;
     }
 }

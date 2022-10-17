@@ -4,17 +4,33 @@
 
 h1 {
     font-family: 'Shrikhand', sans-serif;
+    font-size: 26px;
+    padding-top: 20px;
+    margin-left: 20px;
+    letter-spacing: 1px; 
+    @include  media-min("tablet") {
+        margin-right: 30px; 
+        font-size: 35px;
+    }
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 600;
-   
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    @include  media-min("tablet") {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 h3 {
     font-size: 18px;
+    font-weight: 400;
     margin-bottom: -10px;
+    @include  media-min("tablet") {
+        font-size: 16px;
+    }
 }
 
 h4 {
@@ -27,7 +43,6 @@ h5 {
     margin-bottom: -6px;
     padding-left: 12%;
     padding-right: 12%;
-    padding-top: 5%;
 }
 
 h6{

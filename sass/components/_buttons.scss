@@ -2,7 +2,7 @@
     border-radius: 30px;
     height: 50px;
     width: 220px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     margin-top: 10px;
     background: linear-gradient($color-secondary, $color-primary);
     border: none;
@@ -13,6 +13,25 @@
     &:hover {
         transform: scale(1.15);
     }
+}
+
+.button1--menus {
+    width: 185px;
+    margin-top: 22px;
+}
+
+.button1--menus2 {
+    width: 185px;
+    margin-bottom: 80px;
+    margin-top: 25px;
+
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    background-color: $color-background;
+    height: 200px;
 }
 
 .header2__home-button {
