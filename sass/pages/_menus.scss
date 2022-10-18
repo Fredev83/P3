@@ -2,16 +2,19 @@ main {
     background: #f2f2f2;
 }
 
+
 .menu__general {
     margin-bottom: 10px;
     position: relative;
     background-color: $color-background;
+    border-radius: 40px 40px 0px 0px;
     @include  media-min("desktop") {
-        display: flex;
+        display: block;
         justify-content: space-around;
         align-items: center;
     }
 }
+
 
 .menu__general--2 {
     position: relative;
@@ -25,10 +28,12 @@ main {
     }
     @include  media-min("desktop") {
         display: block;
-        padding-bottom: 90px;
+        height: 700px;
+        margin-bottom: -200px;
     }
 
 }
+
 
 .menu-heading {
     width: 100%;
@@ -39,6 +44,7 @@ main {
     }
 }
 
+
 .menu-heading__title {
     display: flex;
     justify-content: space-between;
@@ -47,14 +53,12 @@ main {
     margin-top: -13%;
     background: #f2f2f2;
     @include  media-min("tablet") {
-        height: 150px;
+        height:200px;
         justify-content: center;
         align-items: center;
-     }
-     @include  media-min("desktop") {
-        height: 200px;
-     }
+    }
 }
+
 
 .heading-heart {
     display: flex;
@@ -65,6 +69,7 @@ main {
         font-size: 25px;
     }
 }
+
 
 .menu-title {
     border-bottom: 3px solid #99E2D0;
@@ -78,9 +83,11 @@ main {
     }
 }
 
+
 .menu-title--marge{
     margin-left: 40px;
 }
+
 
 .menu-title--top {
     margin-top: 20px;
@@ -88,6 +95,7 @@ main {
         margin-top: 0px;
     }
 }
+
 
 .menu__card {
     display: flex;
@@ -109,19 +117,23 @@ main {
     }
 }
 
+
 .menu__card4 {
     height: 90px;
     align-items: center;
 }
+
 
 .menu-txt {
     margin-left: 10px;
     margin-top: -5px;
 }
 
+
 .menu-txt4 {
     margin-right: 10px;
 }
+
 
 .menu-price {
     display: flex;
@@ -134,9 +146,11 @@ main {
     }
 }
 
+
 .menu-price4 p {
     margin-top: 60px;
 }
+
 
 .menu__type {
     display: flex;
@@ -150,6 +164,7 @@ main {
         margin-right: 12px;
     }
 }
+
 
 .menu__type-master {
     @include  media-min("desktop") {

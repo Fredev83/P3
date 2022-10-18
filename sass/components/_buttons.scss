@@ -4,15 +4,31 @@
     width: 220px;
     margin-bottom: 65px;
     margin-top: 10px;
-    background: linear-gradient($color-secondary, $color-primary);
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     border: none;
     color: white;
     box-shadow: 0px 5px 10px #bdbbbb;
     position: relative;
-    transition: all 300ms;
+    z-index: 1;
     &:hover {
-        transform: scale(1.15);
+        & .button1__lighter {
+            opacity: 1;
+        } 
     }
+    &__lighter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        opacity: 0;
+        background-color: $lighter;
+        box-shadow: 0px 7px 20px #bdbbbb;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+
 }
 
 .button1--menus {

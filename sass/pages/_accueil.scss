@@ -128,8 +128,6 @@
 
     }
     a {
-        height: 100%;
-        width: 100%;
         text-decoration: none;
         color: black;
     }
@@ -183,17 +181,25 @@
     }
     
 }
+    
 
-.card-heart {
-    width: 50px;
-    font-size: 30px;
-    @include  media-min("desktop") {
-        margin-top: 10px; 
-    }
-    ::before {
-        font-weight: 200;
-    }
-}
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
