@@ -15,6 +15,15 @@ main {
     }
 }
 
+.menu-heading {
+    width: 100%;
+    height: auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 .menu__general--2 {
     position: relative;
@@ -32,16 +41,6 @@ main {
         margin-bottom: -200px;
     }
 
-}
-
-
-.menu-heading {
-    width: 100%;
-    height: auto;
-    img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 
@@ -67,6 +66,26 @@ main {
     margin-top: 15px;
     i {
         font-size: 25px;
+    }
+}
+
+.menu__type-master {
+    @include  media-min("desktop") {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.menu__type {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    @include  media-min("tablet") {
+        align-items: center;
+    }
+    @include  media-min("desktop") {
+        width: 100%;
+        margin-right: 12px;
     }
 }
 
@@ -98,6 +117,7 @@ main {
 
 
 .menu__card {
+    overflow: hidden;
     display: flex;
     background: white;
     border-radius: 15px;
@@ -119,7 +139,7 @@ main {
 
 
 .menu__card4 {
-    height: 90px;
+    height: 50%;
     align-items: center;
 }
 
@@ -137,6 +157,7 @@ main {
 
 .menu-price {
     display: flex;
+    height: 100%;
     p {
         justify-content: center;
         margin-right: 20px;
@@ -148,30 +169,12 @@ main {
 
 
 .menu-price4 p {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 
-.menu__type {
-    display: flex;
-    flex-direction: column;
-    margin-left: 12px;
-    @include  media-min("tablet") {
-        align-items: center;
-    }
-    @include  media-min("desktop") {
-        width: 100%;
-        margin-right: 12px;
-    }
-}
 
 
-.menu__type-master {
-    @include  media-min("desktop") {
-        display: flex;
-        justify-content: space-around;
-    }
-}
 
 
 

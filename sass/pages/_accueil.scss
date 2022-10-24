@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: $color-background;
     text-align: center;
+    align-items: center;
     height: 230px;
     @include  media-min("tablet") {
         height: 150px;
@@ -179,7 +180,6 @@
         font-size: 17px;
         font-weight: 300;
     }
-    
 }
     
 

@@ -1,3 +1,4 @@
+/* button restaurants & order */
 .button1 {
     border-radius: 30px;
     height: 50px;
@@ -28,9 +29,13 @@
         z-index: -1;
         transition: opacity 250ms;
     }
+    .title-button1{
+        font-size: 16px;
+    }
 
 }
 
+/* button order menus */
 .button1--menus {
     width: 185px;
     margin-top: 22px;
@@ -50,6 +55,7 @@
     height: 200px;
 }
 
+/* button home */
 .header2__home-button {
     display: flex;
     align-items: center;
@@ -62,6 +68,3 @@
     }
 }
 
-.menu-price a {
-    display: none;
-}
