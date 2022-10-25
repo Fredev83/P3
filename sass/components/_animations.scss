@@ -135,19 +135,16 @@
 
 }
 
-
+/* slide-in slide-out check button */
 
 .menu__card:hover {
     .menu-price {
         transform-origin: 100% 50%;
         animation: slide-in .3s ease-in forwards;
-         
     }
-    .price {
-        width: 30px;
-    }
+    
     .selection {
-        width: 70px;
+        width: 80px;
         background: $color-tertiary;
         border-radius: 0px 15px 15px 0px;
         display: flex;
@@ -155,7 +152,6 @@
         align-items: center;
         position: relative;    
     }
-
 
     .select {
         width: 30px;
@@ -174,15 +170,6 @@
         transform: translateX(50%);
     }
     100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes slide-out {
-    100% {
-        transform: translateX(-50%);
-    }
-    0% {
         transform: translateX(0%);
     }
 }

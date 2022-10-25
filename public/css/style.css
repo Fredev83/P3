@@ -36,6 +36,9 @@ h3 {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: -10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   h3 {
@@ -67,11 +70,6 @@ h6 {
     margin-bottom: 50px;
     font-size: 35px;
   }
-}
-
-.menu-txt p {
-  font-size: 15px;
-  font-weight: 100px;
 }
 
 /* button restaurants & order */
@@ -268,15 +266,13 @@ h6 {
     opacity: 1;
   }
 }
+/* slide-in slide-out check button */
 .menu__card:hover .menu-price {
   transform-origin: 100% 50%;
   animation: slide-in 0.3s ease-in forwards;
 }
-.menu__card:hover .price {
-  width: 30px;
-}
 .menu__card:hover .selection {
-  width: 70px;
+  width: 80px;
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -299,14 +295,6 @@ h6 {
     transform: translateX(50%);
   }
   100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes slide-out {
-  100% {
-    transform: translateX(-50%);
-  }
-  0% {
     transform: translateX(0%);
   }
 }
@@ -672,7 +660,7 @@ h6 {
     margin-top: 10px;
   }
 }
-.card-body p {
+.card-body .card-title p {
   margin-top: -15px;
   font-size: 17px;
   font-weight: 300;
@@ -771,7 +759,7 @@ main {
 }
 @media screen and (min-width: 996px) {
   .menu__type {
-    width: 100%;
+    width: 33%;
     margin-right: 12px;
   }
 }
@@ -830,12 +818,21 @@ main {
 
 .menu__card4 {
   height: 50%;
+  width: 95%;
   align-items: center;
 }
 
 .menu-txt {
   margin-left: 10px;
   margin-top: -5px;
+  overflow: hidden;
+}
+.menu-txt p {
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu-txt4 {
@@ -845,6 +842,7 @@ main {
 .menu-price {
   display: flex;
   height: 100%;
+  margin-left: 30px;
 }
 .menu-price p {
   justify-content: center;

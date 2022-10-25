@@ -28,6 +28,9 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: -10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     @include  media-min("tablet") {
         font-size: 16px;
     }
@@ -55,9 +58,4 @@ h6{
         margin-bottom: 50px;
         font-size: 35px;
     }
-}
-
-.menu-txt p {
-    font-size: 15px;
-    font-weight: 100px;
 }
