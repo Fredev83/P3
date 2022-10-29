@@ -147,6 +147,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .select {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        animation: rotate-icon-out .3s ease-out;
+    }
+    .select path {
+        fill: white;
+    } 
+  
 }
 
 .menu__card:hover {
@@ -161,25 +171,36 @@
         width: 30px;
         height: 30px;
         font-size: 30px;
-        animation: rotate-icon .3s ease-in;
+        animation: rotate-icon-in .3s ease-in;
     }
     .select path {
         fill: white;
     } 
     .menu-txt {
-        margin-right: 0;
+        margin-right: 0px;
     }
 
 }
 
     
-@keyframes rotate-icon {
+@keyframes rotate-icon-in{
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
+
+}
+
+@keyframes rotate-icon-out{
+    100% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+
 }
 
 

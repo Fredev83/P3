@@ -127,6 +127,12 @@ h6 {
   background-color: rgb(242, 242, 242);
   height: 200px;
 }
+.order-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
 
 /* button home */
 .header2__home-button {
@@ -135,10 +141,11 @@ h6 {
   width: 50px;
   justify-content: flex-end;
 }
-.header2__home-button button {
+.header2__home-button span {
   border: none;
   background: white;
   font-size: 20px;
+  color: black;
 }
 
 /* animation heart home */
@@ -278,6 +285,15 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+.selection .select {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  animation: rotate-icon-out 0.3s ease-out;
+}
+.selection .select path {
+  fill: white;
+}
 
 .menu__card:hover .menu-price {
   right: 0px;
@@ -289,21 +305,29 @@ h6 {
   width: 30px;
   height: 30px;
   font-size: 30px;
-  animation: rotate-icon 0.3s ease-in;
+  animation: rotate-icon-in 0.3s ease-in;
 }
 .menu__card:hover .select path {
   fill: white;
 }
 .menu__card:hover .menu-txt {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
-@keyframes rotate-icon {
+@keyframes rotate-icon-in {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotate-icon-out {
+  100% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(0deg);
   }
 }
 .header1, .header2 {
@@ -354,7 +378,7 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .header2--menu1 {
-    margin-bottom: -10%;
+    margin-bottom: -15%;
   }
 }
 
@@ -364,7 +388,7 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .header2--menu2 {
-    margin-bottom: -45%;
+    margin-bottom: -50%;
   }
 }
 
@@ -689,15 +713,6 @@ main {
   }
 }
 
-.menu-heading {
-  width: 100%;
-  height: auto;
-}
-.menu-heading img {
-  width: 100%;
-  height: auto;
-}
-
 .menu__general--2 {
   position: relative;
   top: -112px;
@@ -720,7 +735,16 @@ main {
 }
 
 /* name of restaurant */
-.menu-heading__title {
+.menu-picture {
+  width: 100%;
+  height: auto;
+}
+.menu-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-picture__title {
   display: flex;
   justify-content: space-between;
   border-radius: 40px 40px 0px 0px;
@@ -729,21 +753,11 @@ main {
   background: #f2f2f2;
 }
 @media screen and (min-width: 768px) {
-  .menu-heading__title {
+  .menu-picture__title {
     height: 200px;
     justify-content: center;
     align-items: center;
   }
-}
-
-.heading-heart {
-  display: flex;
-  align-items: center;
-  margin-right: 35px;
-  margin-top: 15px;
-}
-.heading-heart i {
-  font-size: 25px;
 }
 
 /* selection entrée, plat, dessert */
@@ -829,7 +843,7 @@ main {
 
 .menu__card4 {
   height: 50%;
-  width: 95%;
+  width: 97%;
   align-items: center;
 }
 @media screen and (min-width: 768px) {

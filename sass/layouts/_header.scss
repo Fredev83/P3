@@ -44,7 +44,7 @@
 .header2--menu1 {
   background: white;  
   @include  media-min("tablet") {
-    margin-bottom: -10%;
+    margin-bottom: -15%;
   }
 }
 
@@ -53,6 +53,6 @@
   background: white;  
   margin-bottom: -25%;
   @include  media-min("tablet") {
-    margin-bottom: -45%;
+    margin-bottom: -50%;
   }
 }

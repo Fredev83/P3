@@ -53,6 +53,12 @@
     justify-content: center;
     background-color: $color-background;
     height: 200px;
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        font-size: 16px;
+    }
 }
 
 /* button home */
@@ -61,10 +67,11 @@
     align-items: center;
     width: 50px;
     justify-content: flex-end;
-    button {
+    span {
         border: none;
         background: white;
         font-size: 20px;
+        color: black;
     }
 }
 
