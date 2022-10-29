@@ -135,43 +135,41 @@
 
 }
 
+
+
+
 /* slide-in slide-out check button */
+
+.selection{
+    width: 70px;
+    background: $color-tertiary;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .menu__card:hover {
     .menu-price {
-        transform-origin: 100% 50%;
-        animation: slide-in .3s ease-in forwards;
+        right: 0px;
+        
     }
-    
-    .selection {
-        width: 80px;
-        background: $color-tertiary;
-        border-radius: 0px 15px 15px 0px;
+    .selection{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;    
     }
-
     .select {
         width: 30px;
         height: 30px;
         font-size: 30px;
         animation: rotate-icon .3s ease-in;
-        
     }
     .select path {
-       fill: white;
+        fill: white;
+    } 
+    .menu-txt {
+        margin-right: 0;
     }
-}
 
-@keyframes slide-in {
-    0% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
 }
 
     
