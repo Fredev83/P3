@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* graphic identity */
+/* responsive breakpoints */
 * {
   box-sizing: border-box;
 }
@@ -437,6 +440,7 @@ h6 {
   margin-bottom: -5px;
 }
 
+/* search city form */
 .location {
   display: flex;
   justify-content: center;
@@ -458,6 +462,7 @@ h6 {
   border: none;
 }
 
+/* introduction */
 .intro {
   display: flex;
   flex-direction: column;
@@ -476,6 +481,7 @@ h6 {
   font-weight: 300;
 }
 
+/* fonctionnnement */
 .fonctionnement {
   background: white;
   height: 440px;
@@ -550,6 +556,7 @@ h6 {
   font-weight: 500;
 }
 
+/* restaurants */
 #restaurants {
   background: rgb(242, 242, 242);
   padding-bottom: 50px;
@@ -667,6 +674,7 @@ main {
   background: #f2f2f2;
 }
 
+/* menu grl */
 .menu__general {
   margin-bottom: 10px;
   position: relative;
@@ -711,6 +719,7 @@ main {
   }
 }
 
+/* name of restaurant */
 .menu-heading__title {
   display: flex;
   justify-content: space-between;
@@ -737,6 +746,7 @@ main {
   font-size: 25px;
 }
 
+/* selection entrée, plat, dessert */
 @media screen and (min-width: 996px) {
   .menu__type-master {
     display: flex;
@@ -761,6 +771,7 @@ main {
   }
 }
 
+/* menu title classic */
 .menu-title {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
@@ -775,10 +786,12 @@ main {
   }
 }
 
+/* menu title with margin-left */
 .menu-title--marge {
   margin-left: 40px;
 }
 
+/* menu title with margin-top */
 .menu-title--top {
   margin-top: 20px;
 }
@@ -788,6 +801,7 @@ main {
   }
 }
 
+/* cards */
 .menu__card {
   overflow: hidden;
   display: flex;
