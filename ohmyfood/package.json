@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fredev83/ohmyfood.git"
+  },
+  "author": "Fredev83",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fredev83/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Fredev83/ohmyfood#readme"
+}
