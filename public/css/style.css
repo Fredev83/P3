@@ -167,18 +167,24 @@ h6 {
 }
 
 .card-heart .heart1:hover path {
-  animation: animate-heart 2s linear forwards;
+  animation: animate-heart 0.3s linear forwards;
 }
 
 @keyframes animate-heart {
   0% {
     fill: transparent;
   }
-  70% {
+  20% {
     fill: #FF79DA;
   }
+  50% {
+    fill: url(#mygradient);
+  }
+  60% {
+    fill: url(#mygradient2);
+  }
   100% {
-    fill: #9356DC;
+    fill: url(#mygradient3);
   }
 }
 /* animation heart menus */
